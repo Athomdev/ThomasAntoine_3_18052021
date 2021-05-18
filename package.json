@@ -1,0 +1,19 @@
+{
+  "name": "thomasantoine_3_18052021",
+  "version": "1.0.0",
+  "description": "Openclassrooms Dev Web p3 - Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./main.scss:./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Athomdev/ThomasAntoine_3_18052021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Athomdev/ThomasAntoine_3_18052021/issues"
+  },
+  "homepage": "https://github.com/Athomdev/ThomasAntoine_3_18052021#readme"
+}
