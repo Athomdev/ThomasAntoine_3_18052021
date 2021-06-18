@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link CSS-->
+    <link rel="stylesheet" href="style.css">
      <!--Link Fontawesome-->
      <script src="https://kit.fontawesome.com/b2cff2f4f3.js" crossorigin="anonymous"></script>
     <title>Menu - Le délice des sens</title>
@@ -15,26 +17,30 @@
         <div class="container__logo"><img class="head__logo"src="/images/logo/ohmyfood@2x.svg" alt="logo de Ohmyfood"></div>
 </header>
     </div>
-    <h1>Le délice des sens</h1>
+    <div class="bg__img"><img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Restaurant Le délice des sens"></div>
+    
+    <div class="menu__container">
+    <div class="menu__title"><h1>Le délice des sens</h1>
         <i class="far fa-heart"></i>
+    </div>
 
     <div class="entrees">
-        <div class="entrees_title">
+        <div class="partMenu__title">
             <h2>ENTRÉES</h2>
         </div>
 
         <div class="card">
-            <div class="card__text">
+            <div class="card__restaurant__text">
             <h3>Tartare de thon</h3>
             <p>Assaisonné au yuzu</p>
-        </div>
-        <div class="card__price">
+            </div>
+            <div class="card__price">
             <p>25€</p>
-        </div>
+            </div>
         </div>
 
         <div class="card">
-            <div class="card__text">
+            <div class="card__restaurant__text">
             <h3>Bouchée de homard croustillant</h3>
             <p>Et sa farandole de petits légumes</p>
         </div>
@@ -44,7 +50,7 @@
         </div>
 
         <div class="card">
-            <div class="card__text">
+            <div class="card__restaurant__text">
             <h3>Velouté de cèpes</h3>
             <p>Aux truffes</p>
         </div>
@@ -56,13 +62,13 @@
     </div>
     
     <div class="plats">
-        <div class="plats_title">
+        <div class="partMenu__title">
             <h2>PLATS</h2>
         </div>
         
         <div class="card">
-            <div class="card__text">
-            <h3>Poulet rôti aux herbes de provence</h3>
+            <div class="card__restaurant__text">
+            <h3>Poulet rôti aux herbes de Provence </h3>
             <p>Et sa crème de truffe</p>
         </div>
         <div class="card__price">
@@ -71,8 +77,18 @@
         </div>
 
         <div class="card">
-            <div class="card__text">
-            <h3>Côte de Boeuf angus</h3>
+            <div class="card__restaurant__text">
+            <h3>Langouste rôtie</h3>
+            <p>Et ses légumes de saison</p>
+        </div>
+        <div class="card__price">
+            <p>35€</p>
+        </div>
+        </div>
+
+        <div class="card">
+            <div class="card__restaurant__text">
+            <h3>Côte de boeuf Angus </h3>
             <p>Et sa purée de panais</p>
         </div>
         <div class="card__price">
@@ -82,12 +98,12 @@
 
     </div>
     <div class="desserts">
-        <div class="desserts_title">
+        <div class="partMenu__title">
             <h2>DESSERTS</h2>
         </div>
         
         <div class="card">
-            <div class="card__text">
+            <div class="card__restaurant__text">
             <h3>Farandole de desserts</h3>
             <p>Du chef</p>
         </div>
@@ -97,7 +113,7 @@
         </div>
 
         <div class="card">
-            <div class="card__text">
+            <div class="card__restaurant__text">
             <h3>Crème brulée</h3>
             <p>Revisitée</p>
         </div>
@@ -107,9 +123,9 @@
         </div>
 
         <div class="card">
-            <div class="card__text">
-            </h3>Tiramisu</h3>
-            <p>A la noisette</p>
+            <div class="card__restaurant__text">
+            <h3>Tiramisu</h3>
+            <p>À la noisette</p>
         </div>
         <div class="card__price">
             <p>23€</p>
@@ -117,12 +133,12 @@
         </div>
 
     </div>
-    <div class="button__explore"><input type="button" value="Commander"></div>
-
+    <div class="button__explore"><input type="button" class="btn"value="Commander"></div>
+</div>
 <!--FOOTER-->
     <footer>
-        <div class="container__logo__fooyrt">
-            <img src="/images/logo/ohmyfood@2x.svg" alt="logo de Ohmyfood">
+        <div class="container__logo__footer">
+            <img src="/images/logo/ohmyfood@2x.svg" class="logo__footer" alt="logo de Ohmyfood">
         </div>
         <div class="footer__nav">
             <ul>
@@ -133,7 +149,3 @@
             </ul>
         </div>
     </footer>
-
-
-</body>
-</html>

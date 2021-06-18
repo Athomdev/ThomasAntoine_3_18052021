@@ -27,6 +27,8 @@ h1{
     font-size: 2em;
 
 }
+
+
 /* ************************************ */
 /* Header */
 .container__logo{
@@ -53,20 +55,23 @@ h1{
     box-shadow: 0px 4px 2px -3px inset gray;
 }
 .container__explore{
-    padding-bottom: 10px;
+    padding-bottom: 50px;
     background-color: #f6f6f6;
 }
 .explore__title{
     background-color: #f6f6f6;
     padding: 15px;
 }
-
+.button__explore {
+    position: relative;
+    top: 20px;
+}
 
 /* ********************** */
 .card__fonctionnement{
     padding: 20px;
     margin: 15px;
-    
+    position: relative;
     border-radius: 20px;
     justify-content: center;
     background: #f6f6f6;
@@ -79,7 +84,7 @@ h1{
 .num{
     background: $color-primary;
     position: absolute;
-    left: 5px;
+    left: -12px;
     border-radius: 50px;
     padding: 3px 10px 5px 10px;
     color: white;
@@ -103,6 +108,9 @@ h1{
     font-weight: bold;
     box-shadow: 1px 1px 6px 5px #ebebeb;
     
+}
+.btn:hover{
+        background-color: blue;
 }
 .flex{
     display: flex;
@@ -218,10 +226,10 @@ li{
 
 .card__restaurant__text{
     flex-direction: column;
-    margin: 20px;
+    margin: 20px 0px 20px 20px;
     padding-bottom: 15px;
     height: 100%;
-    text-align: left !important;
+    text-align: left;
     
 }
 .card__restaurant__text p{
@@ -231,6 +239,8 @@ li{
 
 .card__text h3{
     margin-bottom: -10px;
+    font-size: small;
+  
     
 }
 
@@ -240,4 +250,62 @@ li{
     font-weight: bold;
     
     
+}
+
+/* Page loader */
+
+/* ne pas oublier le border-box (voir ligne 1) */
+.title__loader{
+    text-shadow: #f6f6f6 10px 5px 30px;
+}
+.load{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.5em;
+    animation: load 4.5s  ease-in-out alternate;
+    animation-iteration-count: 2;
+    background: linear-gradient(to bottom right, $color-primary, $color-secondary);
+    padding: 30px 10px 30px 10px;
+    margin: 15px;
+    border-radius: 50%;
+    // border: solid #99E2D0 5px; 
+    z-index: 1;
+    margin-top: 400px;
+
+}
+
+@keyframes load {
+    0%{
+        
+    }
+        
+    60% {
+        font-family: 'Shrikhand';
+        opacity: 1;
+        transform: rotate(-35deg);
+        font-size: 4em;
+        z-index: 1;
+    }
+    70% {
+        opacity: 1;
+        // filter: blur(3px);
+        letter-spacing: 6px;
+        transform: rotate(390deg);
+        font-size: 1em;
+        box-shadow: black 0px 10px 5px;
+        
+
+    }
+    100%{
+        opacity: 1;
+        font-size: 2em;
+        box-shadow: black 0px 50px 50px;
+        z-index: -1;
+    }
+}
+
+.all{
+    display: none;
 }
