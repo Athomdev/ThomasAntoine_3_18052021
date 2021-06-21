@@ -443,5 +443,44 @@ li {
     transform: rotate(360deg);
   }
 }
+.heart {
+  position: relative;
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
+  margin-left: 50%;
+}
+.heart .fa-heart {
+  position: absolute;
+  font-size: 2rem;
+  color: grey;
+}
+.heart .fa-gradient {
+  width: 55px;
+  height: 75px;
+}
+.heart .fa-gradient:hover {
+  cursor: pointer;
+  font-weight: bold;
+  -moz-animation: backgroundtwo 3s;
+  -webkit-animation: backgroundtwo 3s;
+  animation: backgroundtwo 3s;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes backgroundtwo {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
