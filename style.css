@@ -26,6 +26,10 @@ h1 {
   font-size: 2em;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:visited {
   color: #333;
 }
@@ -79,6 +83,7 @@ a:visited {
 
 .button__explore:hover {
   cursor: pointer;
+  filter: brightness(1.1);
 }
 
 /* ********************** */
@@ -89,12 +94,12 @@ a:visited {
   border-radius: 20px;
   justify-content: center;
   background: #f6f6f6;
-  box-shadow: 1px 1px 6px 5px #ebebeb;
 }
 
 .card__fonctionnement:hover {
   background-color: #f5edff;
   cursor: pointer;
+  box-shadow: 1px 1px 3px 2px #ebebeb;
 }
 
 .black {
@@ -134,7 +139,8 @@ a:visited {
 }
 
 .btn:hover {
-  background-color: blue;
+  box-shadow: 1px 1px 1px 1px #333;
+  filter: brightness(1.1);
 }
 
 .flex {
@@ -153,8 +159,9 @@ footer {
   text-align: left;
 }
 
-a {
+.footer__nav > ul > li > a {
   text-decoration: none;
+  color: white;
 }
 
 .logo__footer {
@@ -177,6 +184,18 @@ li {
   height: 250px;
   text-align: left;
   box-shadow: 1px 1px 6px 5px #ebebeb;
+}
+
+.card__restaurant__text > h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card__restaurant__text > p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .img__card {
@@ -430,7 +449,7 @@ li {
   font-size: x-large;
 }
 
-.fa-check-circle:hover {
+.card:hover > .anim__logo__container > .anim__logo > .fa-check-circle {
   animation: spinIcon 0.8s ease;
   animation-fill-mode: forwards;
 }
@@ -464,7 +483,43 @@ li {
   font-weight: bold;
   -moz-animation: backgroundtwo 3s;
   -webkit-animation: backgroundtwo 3s;
-  animation: backgroundtwo 3s;
+  animation: backgroundtwo 2s;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu__title {
+  margin-left: 100px;
+  margin-right: 80px;
+  margin-top: 0px;
+  white-space: nowrap;
+}
+
+.heartMenu {
+  position: relative;
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
+  margin-left: 50%;
+}
+.heartMenu .fa-heart {
+  position: absolute;
+  font-size: 1rem;
+  color: grey;
+  padding-top: 10px;
+}
+.heartMenu .fa-gradient {
+  width: 55px;
+  height: 75px;
+}
+.heartMenu .fa-gradient:hover {
+  cursor: pointer;
+  font-weight: bold;
+  -moz-animation: backgroundtwo 3s;
+  -webkit-animation: backgroundtwo 3s;
+  animation: backgroundtwo 2s;
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
@@ -480,6 +535,85 @@ li {
   }
   100% {
     opacity: 1;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* tablettes et ordinateurs */
+  body {
+    max-width: 90%;
+  }
+
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card__restaurant {
+    width: 350px;
+    height: 350px;
+  }
+
+  .cards_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .layout__home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .container__fonctionnement {
+    background-color: #353535;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .cards__fonctionnement__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section__title {
+    color: white;
+  }
+
+  .load {
+    margin: auto;
+  }
+
+  .bg__img {
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  .menu__title {
+    width: 100%;
+  }
+
+  .menu__container {
+    box-sizing: border-box;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    margin-top: 50px;
   }
 }
 
