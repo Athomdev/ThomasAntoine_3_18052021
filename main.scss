@@ -368,22 +368,22 @@ li:visited{
     justify-content: center;
     align-items: center;
     font-family: 'Shrikhand', cursive;
-    font-size: 1.5em;
+    font-size: 1.3em;
     animation: load 3.5s  ease-in-out alternate;
     animation-iteration-count: 2;
-    background: linear-gradient(to bottom right, $color-primary, $color-secondary);
-    padding: 30px 10px 30px 10px;
-    margin: 15px;
+    // background: linear-gradient(to bottom right, $color-primary, $color-secondary);
+    padding: 30px 10px 00px 10px;
+    margin-bottom: -15px;
     border-radius: 50%;
-    // border: solid #99E2D0 5px; 
     z-index: 1;
-    margin-top: 50%;
+    // margin-top: 50%;
 
 }
 
 @keyframes load {
     0%{
         margin-top: 30vh;
+        opacity: 0.2;
     
     }
         
@@ -416,9 +416,19 @@ li:visited{
 }
 
 .all{
-    display: none;
+    animation: display 3.5s  ease linear;
 }
 
+@keyframes display{
+    0%{
+        opacity: 1;
+        
+    }
+    100%{
+        opacity: 0;
+        
+    }
+}
 /* Animation menu progressif */ 
 .un{
     animation: fadeIn 1.5s ease-in;
