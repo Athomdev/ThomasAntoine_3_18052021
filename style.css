@@ -178,6 +178,10 @@ li {
   list-style: none;
 }
 
+li:visited {
+  color: white;
+}
+
 /* ** Card Restaurant ** */
 .card__restaurant {
   display: flex;
@@ -259,6 +263,7 @@ li {
   margin-left: 10px;
   font-size: x-small;
   border-bottom: solid #99E2D0 3px;
+  width: 2.5rem;
 }
 
 .card {
@@ -545,11 +550,11 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  padding: 3px;
   top: 15px;
   right: 15px;
   width: 20%;
-  height: 15%;
+  height: 13%;
   text-align: center;
   color: #008766;
   font-weight: bold;
@@ -622,6 +627,7 @@ li {
   footer {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    margin-top: 50px;
   }
 
   .bg__img > img {
