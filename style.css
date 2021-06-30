@@ -344,7 +344,6 @@ li:visited {
 .container__loader {
   max-width: 345px;
   margin: 0 auto;
-  margin-bottom: -100;
   align-items: center;
 }
 
