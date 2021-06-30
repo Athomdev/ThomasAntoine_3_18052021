@@ -2,17 +2,21 @@
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /* Général */
 body{
     max-width: 375px;
-    font-family: roboto, arial, sans-serif;
+    font-family: roboto;
     text-align: center;
     margin: auto;
     display: flex;
     flex-direction: column;
     
+    
 }
-
+.fa-arrow-left{
+    margin-left: 10px ;
+}
 .restaurants img{
     max-width: 375px;
     max-height: 100%;
@@ -127,10 +131,10 @@ footer > .footer__nav > ul > li > a{
 }
 .btn{
     margin: auto;
-    width: 70%;
+    width: 50%;
     padding: 10px;
     border-radius: 30px;
-    background: linear-gradient(320deg, #FF79DA, #9356DC);
+    background: linear-gradient(170deg, #FF79DA, #9356DC);
     color: white;
     font-weight: bold;
     box-shadow: 1px 1px 6px 5px #ebebeb;
@@ -197,13 +201,16 @@ li:visited{
 
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap; 
+    white-space: nowrap;
+    font-size: medium;
 }
 .card__restaurant__text > p{
 
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; 
+    font-size: small !important;
+    padding-top: 10px;
 }
 .img__card{
     width: 100%;
@@ -427,6 +434,7 @@ li:visited{
 
 .all{
     animation: display 10.5s linear;
+    box-sizing: border-box;
 }
 
 @keyframes display{
