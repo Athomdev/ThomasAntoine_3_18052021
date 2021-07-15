@@ -157,10 +157,10 @@ footer > .footer__nav > ul > li > a {
   border-radius: 30px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   color: white;
-  font-weight: bold;
+  font-weight: normal;
   box-shadow: 1px 1px 6px 5px #ebebeb;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 0.7em;
 }
 
 .btn:hover {
