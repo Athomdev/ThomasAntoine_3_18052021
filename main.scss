@@ -85,8 +85,9 @@ footer > .footer__nav > ul > li > a{
 }
 .explore__explain > p{
     font-size: small;
-    font-weight: larger;
+    font-weight: large;
 }
+
 .button__explore {
     position: relative;
     top: 20px;
@@ -113,6 +114,9 @@ footer > .footer__nav > ul > li > a{
     background-color: #f5edff;
     cursor: pointer;
     box-shadow: 1px 1px 3px 2px #ebebeb;
+}
+.card__fonctionnement:hover > a > i{
+    color: #9356dc;
 }
 .black{
     color: black;
@@ -565,7 +569,7 @@ li:visited{
     width: 45px;
     height:45px;
     top: -15px;
-    right: -10;
+    right: 0px;
 
    & .fa-heart{
         position:absolute;
