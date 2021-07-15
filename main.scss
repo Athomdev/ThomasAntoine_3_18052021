@@ -76,11 +76,21 @@ footer > .footer__nav > ul > li > a{
 }
 .explore__title{
     background-color: #f6f6f6;
-    padding: 15px;
+    padding-top: 15px;
+    
+}
+.explore__title > h1{
+    font-size:x-large;
+    font-weight: 800;
+}
+.explore__explain > p{
+    font-size: small;
+    font-weight: larger;
 }
 .button__explore {
     position: relative;
     top: 20px;
+    // max-width: 300px;
     
 }
 .button__explore:hover{
@@ -165,7 +175,9 @@ footer{
         
 
 }
-
+.text{
+padding: 0px 0px 10px 10px;
+}
 .footer__nav > a {
     
     text-decoration: none;
@@ -209,7 +221,7 @@ li:visited{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; 
-    font-size: small !important;
+    font-size: 0.9rem !important;
     padding-top: 10px;
 }
 .img__card{
@@ -223,7 +235,7 @@ li:visited{
 }
 .card__text{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 30%;    
     
@@ -385,11 +397,10 @@ li:visited{
     justify-content: center;
     align-items: center;
     font-family: 'Shrikhand', cursive;
-    font-size: 1.3em;
     animation: load 3.5s  ease-in-out alternate;
     animation-iteration-count: 2;
     // // background: linear-gradient(to bottom right, $color-primary, $color-secondary);
-    padding: 30px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
     margin-bottom: -15px;
     border-radius: 50%;
     z-index: 1;
@@ -467,13 +478,13 @@ li:visited{
 }
 
 .trois{
-    animation: fadeIn 4.5s ease-in;
+    animation: fadeIn 3.5s ease-in;
     animation-iteration-count: 1;
     animation-delay: 0s;
 
 }
 .quatre{
-    animation: fadeIn 6.5s ease-in;
+    animation: fadeIn 4.5s ease-in;
     animation-iteration-count: 1;
     animation-delay: 0s;
 
@@ -551,9 +562,11 @@ li:visited{
 .heart{ 
     position:relative;
     box-sizing: border-box;
-    width: 55px;
-    height:55px;
-    margin-left:50%;
+    width: 45px;
+    height:45px;
+    top: -15px;
+    right: -10;
+
    & .fa-heart{
         position:absolute;
         font-size:2rem;  
